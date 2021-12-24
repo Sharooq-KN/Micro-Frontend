@@ -15,7 +15,8 @@ export default function MainLayout() {
         <Header />
         <Routes>
           <Route path="/" element={<HomeContent />} />
-          <Route path="products/:id" element={<PdpContent />} />
+          <Route path="/home" element={<HomeContent />} />
+          <Route path="/products/:id" element={<PdpContent />} />
           <Route path="/cart" element={<CartContent />} />
         </Routes>
         <Footer />

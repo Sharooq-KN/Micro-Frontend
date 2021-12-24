@@ -5,6 +5,7 @@ import Header from "home/Header";
 import Footer from "home/Footer";
 import PdpContent from "pdp/PdpContent";
 import CartContent from "cart/CartContent";
+import HomeContent from "home/HomeContent";
 import "./index.scss";
 import "remixicon/fonts/remixicon.css";
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
       <Header />
       <Routes>
         <Route path="/" element={<PdpContent/>} />
+        <Route path="/home" element={<HomeContent />} />
         <Route path="/products/:id" element={<PdpContent/>} />
         <Route path="/cart" element={<CartContent />} />
       </Routes>

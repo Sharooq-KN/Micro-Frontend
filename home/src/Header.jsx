@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="flex bg-blue-100">
-            <div className="flex-grow"><Link to="/">Home Page</Link> | <Link to="/cart">Cart</Link></div>
+            <div className="flex-grow"><Link to="/home">Home Page</Link> | <Link to="/cart">Cart</Link></div>
             <div className="relative">
                 <Login/>
                 <MiniCart/>

@@ -18,7 +18,7 @@ const HomeContent = () => {
           key={`product_${product.id}`}
           className="border border-blue-400 hover:bg-blue-200 rounded-md mx-4 p-3"
         >
-          <Link to={`products/${product.id}`}>
+          <Link to={`/products/${product.id}`}>
             <p>{product.name}</p>
             <p>{product.price}</p>
           </Link>
