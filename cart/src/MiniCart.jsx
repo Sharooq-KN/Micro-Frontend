@@ -34,15 +34,15 @@ export default function MiniCart() {
           ))}
           <b className="text-sm">
             {" "}
-            Total: {items.reduce((a, b) => a + b.quantity * b.price, 0)}
+            Total Price: {items.reduce((a, b) => a + b.quantity * b.price, 0)}
           </b>
-          <button
+          {items.length>0 && <button
             className="border border-green-900 bg-white text-green-800 py-1 px-2 rounded-md text-sm ml-5"
             onClick={clearCart}
             id="clearBtn"
           >
             Clear Cart
-          </button>
+          </button>}
         </div>
       )}
     </>
